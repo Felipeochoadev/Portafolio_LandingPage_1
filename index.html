@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" />
     <title>Bombas Hidráulicas Premium | FelipeOchoa</title>
 </head>
 <body>
@@ -22,24 +23,160 @@
                 </ul>
                 <div class="cta-container">
                     <a href="#" class="btn-primary">Solicitar Cotización</a>
-                    <a href="#" class="btn-secondary">Ver Ficha Técnica</a>
+                    <a href="#specs" class="btn-secondary">Desglose Técnico</a>
                 </div>
             </div>
             <picture class="mainHeaderHeroImagen">
                 <source srcset="assets/bombas-hidraulicas-volqueta.webp" media="(min-width: 768px)">
-                <img src="assets/bombas-hidraulicas-volqueta.webp" alt="Dos bombas hidráulicas de hierro fundido para volquetas en primer plano con maquinaria pesada trabajando">
+                <img src="assets/bombas-hidraulicas-volqueta.webp" alt="Dos bombas hidráulicas de hierro fundido para volquetas en primer plano con maquinaria pesada trabajando en una construcción de fondo">
             </picture>
         </div>
     </header>
+
     <main>
         <section class="quick-stats">
             <div class="stat-item"><strong>10k+</strong><span>Horas de Vida</span></div>
             <div class="stat-item"><strong>ISO 9001</strong><span>Certificadas</span></div>
             <div class="stat-item"><strong>24/7</strong><span>Soporte Técnico</span></div>
         </section>
+
+        <section id="specs" class="technical-specs">
+            <div class="specs-container">
+                <div class="specs-header">
+                    <span class="badge">Desglose Técnico</span>
+                    <h2>Vista <span>Explosionada</span></h2>
+                    <p>Explora la ingeniería interna. Haz clic en el diagrama para ver los componentes en detalle.</p>
+                </div>
+        
+                <div class="exploded-view-banner" onclick="openExplorerModal()">
+                    <div class="crossfade-slider">
+                        <img src="assets/bomba-hidraulica-despiece-frontal.webp" alt="Vista explosionada frontal de bomba hidráulica para volqueta mostrando el eje de mando y sellos principales" class="slide" style="--d: 0s">
+                        <img src="assets/diagrama-tecnico-bomba-volqueta.webp" alt="Diagrama técnico detallado de los componentes internos y cuerpo de engranajes de una bomba hidráulica industrial." class="slide" style="--d: 4s">
+                        <img src="assets/plano-ensamble-bomba-hidraulica.webp" alt="Plano de ensamble y despiece técnico resaltando la valvulería y tornillería de precisión de la bomba" class="slide" style="--d: 8s">
+                    </div>
+                    <div class="overlay-glass"></div>
+                    <div class="zoom-indicator">
+                        <div class="zoom-icon">
+                            <span class="material-symbols-outlined">zoom_in</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="components-grid">
+                    <div class="grid-column">
+                        <div class="component-item"><b>1</b><span>SHAFT SEAL</span></div>
+                        <div class="component-item"><b>2</b><span>SHAFT END COVER</span></div>
+                        <div class="component-item"><b>3</b><span>SHAFT RING SEALS</span></div>
+                        <div class="component-item"><b>4</b><span>ROLLER BEARINGS</span></div>
+                        <div class="component-item"><b>5</b><span>POCKET SEALS</span></div>
+                        <div class="component-item"><b>6</b><span>THRUST PLATES</span></div>
+                        <div class="component-item"><b>7</b><span>KEY</span></div>
+                        <div class="component-item"><b>8</b><span>DRIVE SHAFT & GEAR</span></div>
+                        <div class="component-item"><b>9</b><span>GASKET SEALS</span></div>
+                        <div class="component-item"><b>10</b><span>GEAR HOUSING</span></div>
+                    </div>
+        
+                    <div class="grid-column">
+                        <div class="component-item"><b>11</b><span>VALVE HOUSING</span></div>
+                        <div class="component-item"><b>12</b><span>VALVE SPOOL</span></div>
+                        <div class="component-item"><b>13</b><span>"O" RINGS</span></div>
+                        <div class="component-item"><b>14</b><span>RETAINER RINGS</span></div>
+                        <div class="component-item"><b>15</b><span>SNAP RINGS</span></div>
+                        <div class="component-item"><b>16</b><span>VALVE CAP</span></div>
+                        <div class="component-item"><b>17</b><span>POPPET SPRING</span></div>
+                        <div class="component-item"><b>18</b><span>STEEL BALL</span></div>
+                        <div class="component-item"><b>19</b><span>DETENT RETAINER</span></div>
+                        <div class="component-item"><b>19a</b><span>LOCAL WASHER</span></div>
+                    </div>
+        
+                    <div class="grid-column">
+                        <div class="component-item"><b>20</b><span>CAP SCREWS</span></div>
+                        <div class="component-item"><b>21</b><span>RELIEF VALVE ASSEMBLY</span></div>
+                        <div class="component-item"><b>22</b><span>CAP SCREWS</span></div>
+                        <div class="component-item"><b>23</b><span>SLEEVE (OPTIONAL)</span></div>
+                        <div class="component-item"><b>24</b><span>WASHERS</span></div>
+                        <div class="component-item"><b>25</b><span>CHECK ASSEMBLY</span></div>
+                        <div class="component-item"><b>26</b><span>SNAP RING</span></div>
+                        <div class="component-item"><b>27</b><span>SPACER</span></div>
+                        <div class="component-item"><b>28</b><span>RETAINER</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <div id="explorerModal" class="modal-explorer">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeExplorerModal()">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <div class="modal-body">
+                <img id="modalImage" src="assets/bomba-hidraulica-despiece-frontal.webp" alt="Vista explosionada frontal de bomba hidráulica para volqueta mostrando el eje de mando y sellos principales.">
+            </div>
+            <div class="modal-controls">
+                <button class="control-btn" onclick="changeModalImage(-1)">
+                    <span class="material-symbols-outlined">arrow_back_ios_new</span>
+                </button>
+                <div id="modalCounter">1 / 3</div>
+                <button class="control-btn" onclick="changeModalImage(1)">
+                    <span class="material-symbols-outlined">arrow_forward_ios</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>© 2026 FelipeOchoa. Desarrollador de software, soluciones profesionales</p>
     </footer>
+
+    <script>
+        const modalImages = ["assets/bomba-hidraulica-despiece-frontal.webp", "assets/diagrama-tecnico-bomba-volqueta.webp", "assets/plano-ensamble-bomba-hidraulica.webp"];
+        let currentImageIndex = 0;
+
+        function openExplorerModal() {
+            const modal = document.getElementById('explorerModal');
+            modal.style.display = 'flex';
+            setTimeout(() => modal.classList.add('active'), 10);
+            document.body.style.overflow = 'hidden';
+            updateModalImage();
+        }
+
+        function closeExplorerModal() {
+            const modal = document.getElementById('explorerModal');
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }, 400);
+        }
+
+        function changeModalImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex >= modalImages.length) currentImageIndex = 0;
+            if (currentImageIndex < 0) currentImageIndex = modalImages.length - 1;
+            updateModalImage();
+        }
+
+        function updateModalImage() {
+            const img = document.getElementById('modalImage');
+            const counter = document.getElementById('modalCounter');
+            img.style.opacity = '0';
+            setTimeout(() => {
+                img.src = modalImages[currentImageIndex];
+                img.style.opacity = '1';
+                counter.innerText = `${currentImageIndex + 1} / ${modalImages.length}`;
+            }, 200);
+        }
+
+        document.getElementById('explorerModal').addEventListener('click', function(e) {
+            if (e.target === this) closeExplorerModal();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") closeExplorerModal();
+            if (e.key === "ArrowRight") changeModalImage(1);
+            if (e.key === "ArrowLeft") changeModalImage(-1);
+        });
+    </script>
 </body>
 </html>
