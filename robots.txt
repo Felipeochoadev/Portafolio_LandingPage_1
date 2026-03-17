@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /estilos.css
+Allow: /modal.js
+
+Sitemap: https://felipeochoa.com/sitemap.xml
